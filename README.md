@@ -7,8 +7,11 @@ This code is a web scraper implemented in Python using the requests library, Bea
 The code requires the following dependencies to be installed:
 
 requests
+
 beautifulsoup4
+
 html2text
+
 schedule
 
 These dependencies can be installed using pip:
