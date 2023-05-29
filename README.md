@@ -2,7 +2,8 @@
 
 This code is a web scraper implemented in Python using the requests library, BeautifulSoup, and html2text. The purpose of the scraper is to fetch the content from specified URLs and write it to separate output files.
 
-Dependencies:
+# Dependencies:
+
 The code requires the following dependencies to be installed:
 
 requests
@@ -12,7 +13,7 @@ html2text
 These dependencies can be installed using pip:
 !pip install requests beautifulsoup4 html2text
 
-Usage:
+# Usage:
 1. Specify URLs and Output Files:
 
 In the execute_main() function, there are two lists: main_urls and output_files. You can modify these lists to specify the URLs you want to scrape and the corresponding output files where the scraped content will be stored. Make sure the length of both lists is the same, and each URL corresponds to its respective output file.
