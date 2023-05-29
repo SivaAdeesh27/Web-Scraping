@@ -1,6 +1,6 @@
 # Web-Scraping
 
-This code is a web scraper implemented in Python using the requests library, BeautifulSoup, and html2text. The purpose of the scraper is to fetch the content from specified URLs and write it to separate output files.
+This code is a web scraper implemented in Python using the requests library, BeautifulSoup, and html2text. The purpose of the scraper is to fetch the content from specified URLs and write it to separate output files.I have tried for Sinhala and Kazakh languages.
 
 # Dependencies:
 
