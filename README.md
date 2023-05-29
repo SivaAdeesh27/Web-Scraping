@@ -14,11 +14,14 @@ html2text
 
 schedule
 
-These dependencies can be installed using pip:
+# These dependencies can be installed using pip:
 
 !pip install requests 
+
 !pip install beautifulsoup4 
+
 !pip install html2text 
+
 !pip install schedule
 
 # Usage:
