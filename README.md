@@ -9,9 +9,14 @@ The code requires the following dependencies to be installed:
 requests
 beautifulsoup4
 html2text
+schedule
 
 These dependencies can be installed using pip:
-!pip install requests beautifulsoup4 html2text
+
+!pip install requests 
+!pip install beautifulsoup4 
+!pip install html2text 
+!pip install schedule
 
 # Usage:
 1. Specify URLs and Output Files:
