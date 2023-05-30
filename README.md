@@ -1,47 +1,60 @@
-# Web-Scraping
+# Web Scraping and Scheduling Script
 
-This code is a web scraper implemented in Python using the requests library, BeautifulSoup, and html2text. The purpose of the scraper is to fetch the content from specified URLs and write it to separate output files.I have tried for Sinhala and Kazakh languages.
+This script is designed to perform web scraping of specific URLs and schedule the scraping process to run at regular intervals. It utilizes the `requests`, `beautifulsoup4`, and `schedule` libraries to fetch HTML content, extract relevant information, and automate the scraping process.
 
-# Dependencies:
+## Prerequisites
 
-The code requires the following dependencies to be installed:
+Before running the script, make sure you have the following dependencies installed:
 
-requests
+- Python 3.x
+- `requests` library
+- `beautifulsoup4` library
+- `schedule` library
 
-beautifulsoup4
+You can install the required libraries using pip:
 
-html2text
+pip install requests beautifulsoup4 schedule
 
-schedule
 
-# These dependencies can be installed using pip:
+## Usage
 
-!pip install requests 
+1. Clone this repository or download the script file.
 
-!pip install beautifulsoup4 
+2. Open the script file `web_scraping_schedule.py` in a text editor.
 
-!pip install html2text 
+3. Modify the following variables as per your requirements:
 
-!pip install schedule
+   - `invalid_urls`: List of invalid URLs to skip during scraping.
+   - `main_urls`: List of main URLs to scrape.
+   - `output_files`: List of output file names to save the scraped content.
 
-# Usage:
-1. Specify URLs and Output Files:
+4. Save the script file.
 
-In the execute_main() function, there are two lists: main_urls and output_files. You can modify these lists to specify the URLs you want to scrape and the corresponding output files where the scraped content will be stored. Make sure the length of both lists is the same, and each URL corresponds to its respective output file.
+5. Open a terminal or command prompt and navigate to the directory where the script file is located.
 
-2. Invalid URLs:
+6. Run the script using the following command:
 
-The code contains a list named invalid_urls that includes URL patterns to be skipped during scraping. You can modify this list as per your requirements.
+python web_scraping_schedule.py
 
-3. Running the Scraper:
 
-To run the web scraper, execute the schedule_script() function. It has two parts:
+The script will run immediately and start scraping the specified URLs. It will save the extracted content to the output files.
 
-The execute_main() function is called initially to immediately fetch the content from the specified URLs and store it in the output files.
-The execute_main() function is scheduled to run every day at a random time between 24 hours and 48 hours after the initial execution. This is achieved using the schedule library.
+7. The script will automatically schedule the next run based on a random time interval between 24 to 28 hours. It will continue running and scraping at the scheduled times.
 
-4. Output Files:
+## Customization
 
-The scraped content will be stored in separate output files specified in the output_files list. Each file will contain the plain text content of the corresponding URL. The file names provided in the list should be unique to avoid overwriting existing files.
+You can customize the script further based on your specific needs. Here are some possible modifications:
+
+- Adjust the list of `main_urls` and `output_files` to scrape different websites or pages.
+- Modify the scraping logic in the `main` function to extract specific information from web pages.
+- Customize the time interval for scheduling by modifying the `get_next_run_time` function.
+
+## Notes
+
+- Ensure that you comply with the terms of service and legal requirements of the websites you are scraping. Respect their policies and do not abuse or overload their servers.
+- This script is provided as an example and should be used responsibly and within the bounds of applicable laws and regulations.
+
+
+
 
 
