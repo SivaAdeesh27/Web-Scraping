@@ -20,7 +20,7 @@ pip install requests beautifulsoup4 schedule
 
 1. Clone this repository or download the script file.
 
-2. Open the script file `web_scraping_schedule.py` in a text editor.
+2. Open the script file `webscrapeautomation.py` in a text editor.
 
 3. Modify the following variables as per your requirements:
 
@@ -34,7 +34,7 @@ pip install requests beautifulsoup4 schedule
 
 6. Run the script using the following command:
 
-python web_scraping_schedule.py
+python webscrapeautomation.py
 
 
 The script will run immediately and start scraping the specified URLs. It will save the extracted content to the output files.
